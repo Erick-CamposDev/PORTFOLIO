@@ -2,9 +2,6 @@
 
 Este é o repositório do meu portfólio pessoal, desenvolvido com **HTML**, **CSS** e **JavaScript**. O site foi criado com foco em **responsividade** (Mobile First), desempenho e uma navegação fluida com animações suaves ao fazer **scroll**.
 
-> **🚧 Observação importante:**  
-> Este portfólio está em **constante desenvolvimento**. O botão de **“Baixar Currículo”** ainda **não está funcional** neste momento.
-
 ---
 
 ## 🔗 Seções do Portfólio
@@ -53,8 +50,6 @@ Informações para contato:
 - LinkedIn
 - GitHub
 
-💡 O botão de **Baixar Currículo** ainda **não está funcional**, mas será implementado futuramente.
-
 ---
 
 ## 🔧 Funcionalidades Técnicas
@@ -82,7 +77,7 @@ Construído com **Mobile First**, garantindo boa visualização e usabilidade em
 ## 📌 To-Do
 
 - [x] Substituir os projetos por versões reais
-- [ ] Ativar o botão de download de currículo
+- [x] Ativar o botão de download de currículo
 - [x] Melhorar as animações de scroll com JavaScript avançado
 
 ---
