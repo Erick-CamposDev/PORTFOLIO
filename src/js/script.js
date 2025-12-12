@@ -1,6 +1,8 @@
 const select = document.getElementById("selectSkill");
 const skillCategory = document.querySelectorAll(".skills-category");
 
+const header = document.querySelector("header");
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -14,6 +16,12 @@ document
     ".skills-select, .project-content, .about-content, #contact-me"
   )
   .forEach((el) => observer.observe(el));
+
+window.addEventListener("scroll", () => {
+  scrollY > 100
+    ? header.classList.add("scroll")
+    : header.classList.remove("scroll");
+});
 
 function selectCategory() {
   cleanCategory();

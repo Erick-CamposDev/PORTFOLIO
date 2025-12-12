@@ -34,7 +34,6 @@ body {
 header {
   display: flex;
   width: 100%;
-  background: linear-gradient(to bottom, #2f4f4f -15%, #32cd32 100%);
   font-family: "Lato";
   height: 8rem;
   color: #f0f0f0;
