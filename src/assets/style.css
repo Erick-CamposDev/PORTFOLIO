@@ -26,6 +26,8 @@ header {
   height: 8rem;
   align-items: center;
   border-bottom: 2px solid #0e0d0d;
+  position: fixed;
+  z-index: 999;
 }
 
 header div {
@@ -55,6 +57,10 @@ header div {
 
 .nav-bar-pc {
   display: none;
+}
+
+.nav-bar-pc .list .nav-item a span {
+  font-size: 0.9rem;
 }
 
 .nav-bar {
@@ -123,7 +129,7 @@ a {
 
 main {
   font-family: "Oswald";
-  padding-bottom: 5rem;
+  padding: 8rem 0 5rem;
 }
 
 main h1,
@@ -132,7 +138,11 @@ h2 {
 }
 
 main h1 {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
+}
+
+main h1 span {
+  text-transform: uppercase;
 }
 
 main h2 {
@@ -146,15 +156,7 @@ main section {
 .presentation {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #0a0a0a;
-  width: 350px;
   padding: 1rem;
-  border-radius: 20px;
-  background: linear-gradient(
-    to bottom,
-    rgba(18, 226, 18, 0.35) -15%,
-    rgba(94, 90, 90, 0.35) 100%
-  );
 }
 
 #home h2,
@@ -677,6 +679,10 @@ footer {
   .skills-category {
     width: 720px;
     font-size: 20px;
+  }
+
+  .nav-bar-pc .list .nav-item a span {
+    font-size: 0.72rem;
   }
 }
 
