@@ -314,6 +314,17 @@ main section {
   text-align: center;
 }
 
+.about-content {
+  background: linear-gradient(
+    to bottom,
+    #6874749c 15%,
+    rgba(97, 109, 99, 0.479) 100%
+  );
+  padding: 1rem;
+  border-radius: 18px;
+  box-shadow: 5px 5px 12px var(--txt-color);
+}
+
 .skills-select {
   padding: 1rem 1.5rem;
 }
@@ -455,6 +466,12 @@ p {
   margin-left: 0.5rem;
 }
 
+#contact-me p {
+  font-size: 1.2rem;
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
 .social-links {
   display: flex;
   flex-flow: column wrap;
@@ -500,7 +517,7 @@ footer {
   color: #f0f0f0;
   margin-bottom: 5rem;
   padding: 3rem;
-  font-family: "Lato";
+  font-family: "Raleway";
   font-weight: 600;
   text-align: center;
 }
@@ -756,15 +773,6 @@ footer {
   .nav-bar-pc {
     display: flex;
     justify-self: flex-end;
-  }
-
-  #about-me h2,
-  #skills h2,
-  #projects h2,
-  #contact-me h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 0.75rem;
   }
 
   #about-me {
