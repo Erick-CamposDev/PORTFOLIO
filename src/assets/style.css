@@ -38,6 +38,7 @@ header {
   height: 8rem;
   color: #f0f0f0;
   align-items: center;
+  justify-content: center;
   border-bottom: 2px solid #0e0d0d;
   position: fixed;
   z-index: 9999;
@@ -202,9 +203,13 @@ main h1 {
   font-family: "Poppins";
 }
 
-main h1 span {
+.my-name {
   text-transform: uppercase;
   color: #159c06;
+  font-weight: 700;
+  font-size: 2.45rem;
+  font-family: "Poppins";
+  width: 100%;
 }
 
 main h2 {
@@ -225,7 +230,8 @@ main section {
 .presentation {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  width: 70%;
+  gap: 0.3rem;
   flex-wrap: wrap;
   padding: 1rem;
 }
@@ -237,7 +243,7 @@ main section {
   animation: slideRight 2s forwards;
 }
 
-.cartoon-photo {
+.main-photo {
   display: flex;
   aspect-ratio: 1 / 1;
   align-items: center;
@@ -247,10 +253,10 @@ main section {
   margin-left: 2.5rem;
 }
 
-.cartoon-photo img {
+.main-photo img {
   width: 300px;
   height: 300px;
-  border: 2px solid #0a0a0a;
+  border: 6px solid #159c06;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
   animation-delay: 1s;
@@ -289,7 +295,10 @@ main section {
   filter: brightness(1.5);
 }
 
-#about-me {
+#about-me,
+#skills,
+#projects,
+#contact-me {
   margin: 5rem 0;
   padding: 0.65rem;
 }
@@ -303,22 +312,6 @@ main section {
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
-}
-
-.photo {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0 2rem;
-}
-
-.my-photo {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 3px solid #0a0a0a;
-  box-shadow: 6px 6px 12px #0000008c;
 }
 
 .skills-select {
@@ -337,7 +330,7 @@ main section {
     #687474 15%,
     rgb(97, 109, 99, 0.1) 100%
   );
-  color: #dad6d6;
+  color: var(--txt-color);
   border: 2px solid #0a0a0a;
   border-radius: 12px;
   cursor: pointer;
@@ -350,12 +343,12 @@ main section {
 
 #selectSkill option:disabled {
   color: #ffffff;
-  font: 800;
+  font-weight: 800;
 }
 
 #selectSkill:focus {
   outline: none;
-  border: 2px solid #dad6d6;
+  border: 2px solid #2f4f4f;
 }
 
 .skills-flex {
@@ -638,6 +631,61 @@ footer {
   }
 }
 
+@media (min-width: 280px) and (max-width: 421px) {
+  .main-photo img {
+    height: 240px;
+    width: 240px;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  .my-name {
+    font-size: 1.6rem;
+  }
+
+  main h2 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 6%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .main-photo {
+    margin: 0;
+  }
+
+  .presentation {
+    text-align: center;
+  }
+
+  .presentation {
+    width: 100%;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 1rem;
+    width: 85%;
+  }
+
+  #about-me p {
+    font-size: 1.25rem;
+  }
+}
+
 @media (min-width: 421px) and (max-width: 768px) {
   header {
     justify-content: space-evenly;
@@ -646,6 +694,53 @@ footer {
 
   .nav-bar {
     justify-content: center;
+  }
+
+  .main-photo img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  .my-name {
+    font-size: 2rem;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+  .presentation {
+    width: 85%;
+  }
+
+  .main-photo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn {
+    padding: 0.9rem;
+  }
+
+  #about-mep {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-me h2,
+  #skills h2,
+  #projects h2,
+  #contact-me h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
   }
 }
 
@@ -661,6 +756,15 @@ footer {
   .nav-bar-pc {
     display: flex;
     justify-self: flex-end;
+  }
+
+  #about-me h2,
+  #skills h2,
+  #projects h2,
+  #contact-me h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
   }
 
   #about-me {
@@ -763,6 +867,18 @@ footer {
 
   .nav-bar-pc .list .nav-item a span {
     font-size: 0.72rem;
+  }
+
+  .main-photo img {
+    width: 270px;
+    height: 270px;
+  }
+
+  #about-me h2,
+  #skills h2,
+  #projects h2,
+  #contact-me h2 {
+    font-size: 1.5rem;
   }
 }
 
