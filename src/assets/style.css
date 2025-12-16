@@ -460,6 +460,9 @@ main section {
   border-radius: 10px;
   box-shadow: 3.5px 3.5px 5px #000000;
   gap: 0.5rem;
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: all 0.8s ease-in;
 }
 
 .project-content h3,
@@ -578,7 +581,6 @@ footer {
 }
 
 .skills-select,
-.project-content,
 .about-content,
 #contact-me {
   opacity: 0;
@@ -587,11 +589,15 @@ footer {
 }
 
 .skills-select.show,
-.project-content.show,
 .about-content.show,
 #contact-me.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.project-content.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @keyframes slider {
