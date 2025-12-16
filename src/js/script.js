@@ -3,6 +3,8 @@ const skillCategory = document.querySelectorAll(".skills-category");
 
 const header = document.querySelector("header");
 
+const loops = document.querySelectorAll(".loop");
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -49,3 +51,5 @@ function cleanCategory() {
 }
 
 select.addEventListener("change", selectCategory);
+
+loops.forEach((loop) => (loop.innerHTML += loop.innerHTML));

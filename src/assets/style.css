@@ -371,8 +371,27 @@ main section {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
+
+.loop {
+  animation: slider 12s infinite linear;
+  will-change: transform;
+}
+
+.loop > li {
+  margin-right: 4.5rem;
+  filter: grayscale(100%);
+}
+
+.skills-mask .loop:hover {
+  animation-play-state: paused;
+}
+
+.loop li:hover {
+  filter: grayscale(0);
+}
+
 .skills-category {
-  display: flex;
+  display: none;
   flex-flow: column;
   margin: 1rem 0 1rem;
   border: 2px solid #0a0a0a;
@@ -384,6 +403,7 @@ main section {
   border-radius: 25px;
   padding: 0 1rem 1rem;
   box-shadow: 3px 3px 12px var(--txt-color);
+  overflow: hidden;
 }
 
 .skills-category h3 {
@@ -400,6 +420,25 @@ main section {
 .technology-img {
   width: 60px;
   height: 60px;
+}
+
+.skills-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 25%,
+    black 75%,
+    transparent
+  );
+  overflow: hidden;
 }
 
 .project-flex {
@@ -553,6 +592,15 @@ footer {
 #contact-me.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes slider {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes slideRight {
@@ -824,8 +872,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    width: 100%;
+    width: max-content;
   }
 
   .skills-category ul li {
