@@ -303,8 +303,11 @@ main section {
   padding: 0.65rem;
 }
 
-#aboyt-me h2 {
-  font-size: 2rem;
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #about-me p {
@@ -315,6 +318,7 @@ main section {
 }
 
 .about-content {
+  width: 75%;
   background: linear-gradient(
     to bottom,
     #6874749c 15%,
@@ -364,36 +368,38 @@ main section {
 
 .skills-flex {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
 .skills-category {
-  display: none;
-  flex-flow: column wrap;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: column;
+  margin: 1rem 0 1rem;
   border: 2px solid #0a0a0a;
   background: linear-gradient(
     to bottom,
-    #687474 15%,
-    rgb(97, 109, 99, 0.1) 100%
+    #68747480 15%,
+    rgba(97, 109, 99, 0.438) 100%
   );
   border-radius: 25px;
-  padding: 0 1rem 0.75rem;
-  width: 320px;
-  margin-top: 0.75rem;
+  padding: 0 1rem 1rem;
+  box-shadow: 3px 3px 12px var(--txt-color);
 }
 
 .skills-category h3 {
   font-size: 18px;
+  padding: 0.75rem 0 1.25rem;
 }
 
 .skills-category li {
   display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+  flex-direction: column;
   align-items: center;
+}
+
+.technology-img {
+  width: 60px;
+  height: 60px;
 }
 
 .project-flex {
@@ -811,8 +817,7 @@ footer {
   .skills-category {
     width: 950px;
     font-size: 25px;
-    flex-direction: row;
-    height: 100px;
+    height: 170px;
   }
 
   .skills-category ul {
