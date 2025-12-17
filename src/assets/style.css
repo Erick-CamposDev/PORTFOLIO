@@ -279,7 +279,9 @@ main section {
 
 .btn {
   border: 1px solid #0e0e0e;
-  padding: 1.2rem;
+  width: 200px;
+  height: 60px;
+  padding: 0 0.65rem;
   background: linear-gradient(
     to bottom,
     rgb(18, 226, 18) -15%,
@@ -288,7 +290,10 @@ main section {
   border-radius: 22px;
   box-shadow: 2px 2px 2px #000000;
   font-weight: bold;
+  font-family: "Poppins";
+  font-size: 1rem;
   transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -680,10 +685,6 @@ footer {
     height: 195px;
   }
 
-  .btn {
-    padding: 0.75rem;
-  }
-
   .project-content {
     height: auto;
     margin-left: 0;
@@ -854,10 +855,10 @@ footer {
   }
 
   .btn {
-    padding: 0.9rem;
+    width: 160px;
   }
 
-  #about-mep {
+  #about-me {
     font-size: 1rem;
   }
 }
@@ -896,6 +897,7 @@ footer {
 
   #about-me h2 {
     align-self: flex-start;
+    margin-bottom: 1rem;
   }
 
   .about-content {
