@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  background: var(--primary-color);
+  background: radial-gradient(to);
   color: var(--txt-color);
 }
 
@@ -384,7 +384,8 @@ main section {
 }
 
 .loop > li > p {
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
 }
 
 .skills-mask .loop:hover {
@@ -397,7 +398,7 @@ main section {
 }
 
 .loop > li:hover > p {
-  visibility: initial;
+  opacity: 1;
 }
 
 .skills-category {
@@ -475,7 +476,8 @@ main section {
   transition: all 0.8s ease-in;
 }
 
-.project-content h3 {
+.project-content > h3,
+.project-content > p {
   margin-left: 0.5rem;
 }
 
