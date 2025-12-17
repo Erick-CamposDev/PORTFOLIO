@@ -379,7 +379,12 @@ main section {
 
 .loop > li {
   margin-right: 4.5rem;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
+  transition: all 0.4s ease-in;
+}
+
+.loop > li > p {
+  visibility: hidden;
 }
 
 .skills-mask .loop:hover {
@@ -388,6 +393,11 @@ main section {
 
 .loop li:hover {
   filter: grayscale(0);
+  cursor: pointer;
+}
+
+.loop > li:hover > p {
+  visibility: initial;
 }
 
 .skills-category {
@@ -465,8 +475,7 @@ main section {
   transition: all 0.8s ease-in;
 }
 
-.project-content h3,
-p {
+.project-content h3 {
   margin-left: 0.5rem;
 }
 
