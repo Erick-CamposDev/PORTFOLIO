@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  background: radial-gradient(to);
+  background: var(--primary-color);
   color: var(--txt-color);
 }
 
@@ -241,6 +241,7 @@ main section {
   opacity: 0;
   transform: translateX(-50px);
   animation: slideRight 2s forwards;
+  font-family: "Raleway";
 }
 
 .main-photo {
@@ -373,6 +374,7 @@ main section {
 }
 
 .loop {
+  display: flex;
   animation: slider 12s infinite linear;
   will-change: transform;
 }
@@ -385,7 +387,7 @@ main section {
 
 .loop > li > p {
   opacity: 0;
-  transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s;
 }
 
 .skills-mask .loop:hover {
@@ -648,6 +650,31 @@ footer {
     justify-content: center;
   }
 
+  .loop {
+    animation: slider 20s infinite linear;
+  }
+
+  .loop p {
+    font-size: 0.75rem;
+  }
+
+  .skills-category {
+    max-width: 95%;
+  }
+
+  .technology-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .loop > li {
+    margin-right: 1.5rem;
+  }
+
+  .loop > li > p {
+    opacity: 1;
+  }
+
   .cartoon-photo img {
     width: 195px;
     height: 195px;
@@ -681,6 +708,14 @@ footer {
   .description h2 {
     font-size: 14px;
     width: 70px;
+  }
+
+  .about-content {
+    width: 90%;
+  }
+
+  #about-me p {
+    font-size: 1rem;
   }
 
   .project-content .project-image img {
@@ -740,6 +775,16 @@ footer {
   .btn {
     width: 6%;
   }
+
+  .nav-item i,
+  span {
+    font-size: 0.65rem;
+  }
+}
+@media (min-width: 370px) and (max-width: 600px) {
+  #about-me p {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 280px) and (max-width: 600px) {
@@ -767,10 +812,6 @@ footer {
   .btn {
     padding: 1rem;
     width: 85%;
-  }
-
-  #about-me p {
-    font-size: 1.25rem;
   }
 }
 
@@ -882,7 +923,7 @@ footer {
   .skills-category {
     width: 950px;
     font-size: 25px;
-    height: 170px;
+    height: 185px;
   }
 
   .skills-category ul {
