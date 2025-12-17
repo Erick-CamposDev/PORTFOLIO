@@ -144,7 +144,7 @@ header div {
 }
 
 .nav-item span {
-  font-size: 0.75rem;
+  font-size: 1rem;
   position: relative;
 }
 
@@ -761,6 +761,10 @@ footer {
     width: 240px;
   }
 
+  .contact-icons {
+    margin-left: 0;
+  }
+
   main h1 {
     font-size: 1.5rem;
   }
@@ -777,7 +781,7 @@ footer {
     width: 6%;
   }
 
-  .nav-item i,
+  .nav-item,
   span {
     font-size: 0.65rem;
   }
@@ -785,6 +789,10 @@ footer {
 @media (min-width: 370px) and (max-width: 600px) {
   #about-me p {
     font-size: 1.25rem;
+  }
+
+  .nav-item span {
+    font-size: 0.75rem;
   }
 }
 
