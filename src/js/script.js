@@ -5,6 +5,9 @@ const header = document.querySelector("header");
 
 const loops = document.querySelectorAll(".loop");
 
+const closeModalBtn = document.querySelector(".close-btn");
+const modalOverlay = document.querySelector(".modal-bg");
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -53,3 +56,13 @@ function cleanCategory() {
 select.addEventListener("change", selectCategory);
 
 loops.forEach((loop) => (loop.innerHTML += loop.innerHTML));
+
+function openModal() {
+  modalOverlay.style.visibility = "visible";
+  modalOverlay.style.opacity = "1";
+}
+
+function closeModal() {
+  modalOverlay.style.visibility = "hidden";
+  modalOverlay.style.opacity = "0";
+}
