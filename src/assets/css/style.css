@@ -521,31 +521,17 @@ main section {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 1rem;
+  color: var(--secondary-color);
   width: 60%;
   border-radius: 22px;
   padding: 0.75rem;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
-.github-button:hover {
+.modal-btn:hover {
   transform: scale(1.05);
   filter: brightness(1.5);
-}
-
-.github-button a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.github-button a p {
-  color: #0a0a0a;
-}
-
-.technologies i {
-  font-size: 30px;
-  margin-left: 0.5rem;
 }
 
 #contact-me p {
