@@ -60,9 +60,11 @@ loops.forEach((loop) => (loop.innerHTML += loop.innerHTML));
 function openModal() {
   modalOverlay.style.visibility = "visible";
   modalOverlay.style.opacity = "1";
+  document.body.classList.add("active");
 }
 
 function closeModal() {
   modalOverlay.style.visibility = "hidden";
   modalOverlay.style.opacity = "0";
+  document.body.classList.remove("active");
 }
