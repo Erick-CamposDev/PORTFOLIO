@@ -17,6 +17,10 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="src/assets/css/style.css" />
     <title>PORTFOLIO | Erick Campos</title>
   </head>
@@ -444,8 +448,105 @@
       <p>@ 2025 Erick Campos. Todos os direitos reservados.</p>
     </footer>
     <div class="modal-bg">
-      <div class="modal"></div>
+      <div class="modal">
+        <div class="project-container">
+          <div class="close-btn-container">
+            <button class="close-btn" onclick="closeModal()">
+              <i class="bi bi-x-circle"></i>
+            </button>
+            <label>FECHAR</label>
+          </div>
+          <div class="project-title">
+            <h2>Viva<span>Bem</span></h2>
+            <h3>Projeto de website de saúde preventiva</h3>
+          </div>
+          <div class="project-photos">
+            <img
+              class="project-photo"
+              src="src/assets/images/LandingPage.jpg"
+              alt="Landing Page do VivaBem"
+            />
+            <img
+              class="project-photo"
+              src="src/assets/images/CalculadoraIMC.jpg"
+              alt="Calculadora IMC do VivaBem"
+            />
+          </div>
+        </div>
+        <div class="project-container-info">
+          <div class="period">
+            <h2>Julho 2025 - Agosto 2025</h2>
+          </div>
+          <div class="problems">
+            <h2>Problemas Resolvidos:</h2>
+            <ul class="problem-list">
+              <li class="problem-item">
+                Falta de orientação para buscar ajuda tanto física quanto
+                mental.
+              </li>
+              <li class="problem-item">
+                Dificuldade em manter hábitos saúdaveis.
+              </li>
+              <li class="problem-item">
+                Pouco acesso a orientações básicas de sáude.
+              </li>
+              <li class="problem-item">
+                Baixa conscientização sobre prevenção.
+              </li>
+            </ul>
+          </div>
+          <div class="functionalities">
+            <h2>Funcionalidades:</h2>
+            <ul>
+              <li class="function-item">Calculadora IMC</li>
+              <li class="function-item">Guia De Primeiros Socorros</li>
+              <li class="function-item">Guia de Saúde Mental</li>
+              <li class="function-item">Diário Mental</li>
+            </ul>
+          </div>
+          <div class="technologies">
+            <h2>Tecnologias Utilizadas:</h2>
+            <ul>
+              <li>
+                <img
+                  class="technology-li"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="Imagem do HTML"
+                />
+              </li>
+              <li>
+                <img
+                  class="technology-li"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="Imagem do CSS"
+                />
+              </li>
+              <li>
+                <img
+                  class="technology-li"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="Imagem do javascript"
+                />
+              </li>
+              <li>
+                <img
+                  class="technology-li"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                  alt="Imagem do Git"
+                />
+              </li>
+              <li>
+                <img
+                  class="technology-li"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                  alt="Imagem do VScode"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="src/js/script.js"></script>
+    <script defer src="src/js/script.js"></script>
   </body>
 </html>

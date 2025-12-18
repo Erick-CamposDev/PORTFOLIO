@@ -29,6 +29,7 @@ html {
 }
 
 body {
+  position: relative;
   background: var(--primary-color);
   color: var(--txt-color);
 }
@@ -618,6 +619,131 @@ footer {
 .project-content.show {
   opacity: 1;
   transform: translateX(0);
+}
+
+.modal-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  transition: all 0.3 ease-in;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 600px;
+  border: 2px solid var(--txt-color);
+  border-radius: 20px;
+  background: var(--tertiary-color);
+}
+
+.project-container,
+.project-container-info {
+  width: 50%;
+}
+
+.close-btn-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 0.5rem;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.05);
+}
+
+.close-btn-container label {
+  font-size: 1.3rem;
+  font-family: "Lato";
+}
+
+.project-title {
+  margin: 1rem 0 0 1rem;
+}
+
+.project-title h2 {
+  font-size: 1.9rem;
+  font-family: "Lato";
+  font-weight: 800;
+  color: #0f8846;
+}
+
+.project-title h2 span {
+  color: #3a4180;
+}
+
+.project-title h3 {
+  font-size: 1.4rem;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.project-photos {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+  gap: 0.75rem;
+}
+
+.project-photo {
+  width: 350px;
+  height: 200px;
+  border: 2px solid var(--txt-color);
+  border-radius: 14px;
+}
+
+.project-container-info div {
+  margin: 1rem 0 0 1rem;
+}
+
+.project-container-info h2 {
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.problems ul li,
+.functionalities ul li {
+  list-style: circle;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
+.technologies ul {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.technology-li {
+  width: 40px;
+  height: 40px;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 @keyframes slider {
