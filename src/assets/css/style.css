@@ -742,6 +742,33 @@ footer {
   height: 40px;
 }
 
+.project-btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-btn {
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 226, 18, 0.822) -15%,
+    rgba(94, 90, 90, 0.795) 100%
+  );
+  border: 2px solid var(--txt-color);
+  width: 150px;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.project-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
 body.active {
   overflow: hidden;
 }
