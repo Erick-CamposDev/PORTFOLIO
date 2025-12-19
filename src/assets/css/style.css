@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 150px;
 }
 
 body {
@@ -539,32 +540,46 @@ main section {
   font-size: 1.2rem;
   font-family: "Raleway";
   font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .social-links {
   display: flex;
+  align-items: center;
   flex-flow: column wrap;
   margin-top: 1rem;
   margin-left: 0.75rem;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
-.social-links a {
+.social-links button {
   display: flex;
+  justify-content: center;
+  padding: 0.9rem;
   align-items: center;
-  gap: 1rem;
-  border: 1px solid #0a0a0a;
-  width: 130px;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  box-shadow: 2px 2px 1px #000000;
-  border-radius: 10px;
+  border: 2px solid var(--txt-color);
   background: linear-gradient(
     to bottom,
     rgb(18, 226, 18) -15%,
     rgb(94, 90, 90) 100%
   );
-  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px var(--txt-color);
+  width: 65%;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.social-links button a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .social-links a img {
@@ -1280,8 +1295,12 @@ body.active {
     gap: 2rem;
   }
 
-  .social-links a {
-    padding: 1rem 0 1rem;
+  #contact-me p {
+    text-align: left;
+  }
+
+  .social-links button {
+    padding: 1.6rem 1rem 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
