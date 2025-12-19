@@ -642,8 +642,8 @@ footer {
   align-items: center;
   justify-content: center;
   width: 75%;
-  padding: 1rem 0;
-  height: 600px;
+  padding: 1rem 0.65rem;
+  height: auto;
   border: 2px solid var(--txt-color);
   border-radius: 20px;
   background: var(--tertiary-color);
@@ -658,6 +658,7 @@ footer {
 .project-container,
 .project-container-info {
   width: 50%;
+  padding: 0.35rem 0;
 }
 
 .close-btn-container {
@@ -784,6 +785,8 @@ body.active {
 }
 
 .loading-container {
+  visibility: hidden;
+  opacity: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -981,9 +984,47 @@ body.active {
     width: 6%;
   }
 
-  .nav-item,
-  span {
-    font-size: 0.65rem;
+  .nav-item span {
+    font-size: 0.5rem;
+  }
+
+  .project-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-title h3 {
+    font-size: 1.3rem;
+  }
+
+  .problems ul li,
+  .functionalities ul li {
+    font-size: 1rem;
+  }
+
+  .period {
+    margin: 0;
+  }
+
+  .project-container-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .technology-li {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal {
+    width: 90%;
+  }
+
+  .project-btns-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-btns-container button {
+    width: 90%;
   }
 }
 @media (min-width: 370px) and (max-width: 600px) {
@@ -1021,6 +1062,44 @@ body.active {
   .btn {
     padding: 1rem;
     width: 85%;
+  }
+
+  .modal {
+    width: 95%;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .project-container,
+  .project-container-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-container-info {
+    text-align: center;
+  }
+
+  .project-container-info div {
+    margin: 1rem 0 0;
+  }
+
+  .project-container-info ul li {
+    list-style: none;
+  }
+
+  .close-btn-container {
+    align-self: flex-start;
+  }
+
+  .project-photo {
+    width: 100%;
+    height: 150px;
   }
 }
 
@@ -1068,6 +1147,40 @@ body.active {
 
   #about-me {
     font-size: 1rem;
+  }
+
+  .project-btns-container {
+    flex-direction: column;
+  }
+
+  .modal {
+    width: 95%;
+  }
+
+  .problems ul li,
+  .functionalities ul li {
+    font-size: 0.93rem;
+  }
+
+  .project-title h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-title h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-container-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-photo {
+    width: 270px;
+  }
+
+  .technology-li {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -1210,6 +1323,19 @@ body.active {
   #projects h2,
   #contact-me h2 {
     font-size: 1.5rem;
+  }
+
+  .modal {
+    width: 95%;
+  }
+
+  .problems ul li,
+  .functionalities ul li {
+    font-size: 0.93rem;
+  }
+
+  .project-container-info h2 {
+    font-size: 1.4rem;
   }
 }
 
