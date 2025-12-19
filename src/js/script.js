@@ -5,8 +5,11 @@ const header = document.querySelector("header");
 
 const loops = document.querySelectorAll(".loop");
 
+const closeModalContainer = document.querySelector(".close-btn-container");
+
 const closeModalBtn = document.querySelector(".close-btn");
 const modalOverlay = document.querySelector(".modal-bg");
+const loading = document.querySelector(".loading-container");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -57,14 +60,50 @@ select.addEventListener("change", selectCategory);
 
 loops.forEach((loop) => (loop.innerHTML += loop.innerHTML));
 
+async function fetchJson() {
+  loading.style.visibility = "visible";
+  loading.style.opacity = "1";
+
+  try {
+    const response = await fetch("src/assets/data/modal-data.json");
+    const data = await response.json();
+
+    console.log(data);
+
+    if (data) {
+      showModalContent(data);
+    } else {
+      alert("ERRO AO MOSTRAR DADOS!");
+      closeModal();
+    }
+  } catch {
+    alert("ERRO AO FAZER REQUISIÇÃO DOS DADOS!");
+    closeModal();
+  }
+}
+
+async function showModalContent(data) {
+  closeModalContainer.style.visibility = "visible";
+  closeModalContainer.style.opacity = "1";
+}
+
 function openModal() {
   modalOverlay.style.visibility = "visible";
   modalOverlay.style.opacity = "1";
   document.body.classList.add("active");
+
+  fetchJson();
 }
 
 function closeModal() {
   modalOverlay.style.visibility = "hidden";
   modalOverlay.style.opacity = "0";
+
+  loading.style.visibility = "hidden";
+  loading.style.opacity = "0";
+
+  closeModalContainer.style.visibility = "hidden";
+  closeModalContainer.style.opacity = "0";
+
   document.body.classList.remove("active");
 }
