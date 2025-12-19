@@ -640,11 +640,19 @@ footer {
 .modal {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 75%;
+  padding: 1rem 0;
   height: 600px;
   border: 2px solid var(--txt-color);
   border-radius: 20px;
   background: var(--tertiary-color);
+  position: relative;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
 }
 
 .project-container,
@@ -714,7 +722,7 @@ footer {
 }
 
 .project-container-info div {
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 2.5rem;
 }
 
 .project-container-info h2 {
@@ -773,6 +781,41 @@ footer {
 
 body.active {
   overflow: hidden;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: 99999;
+  gap: 0.65rem;
+}
+
+.spinner {
+  border: 6px solid #989c9c;
+  border-top: 6px solid #159c06;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: spin 0.9s infinite linear;
+}
+
+.message {
+  font-size: 1.2rem;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(365deg);
+  }
 }
 
 @keyframes slider {
