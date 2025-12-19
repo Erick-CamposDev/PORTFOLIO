@@ -282,7 +282,7 @@ main section {
 
 .btn {
   border: 1px solid #0e0e0e;
-  width: 200px;
+  width: 230px;
   height: 60px;
   padding: 0 0.65rem;
   background: linear-gradient(
@@ -1061,7 +1061,7 @@ body.active {
 
   .btn {
     padding: 1rem;
-    width: 85%;
+    width: 90%;
   }
 
   .modal {
@@ -1348,5 +1348,9 @@ body.active {
   .my-photo {
     width: 300px;
     height: 300px;
+  }
+
+  .modal {
+    width: auto;
   }
 }
