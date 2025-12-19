@@ -3,7 +3,9 @@
     "modal1": {
       "projectTitle": {
         "title": "VivaBem",
-        "description": "Projeto de website de saúde preventiva"
+        "description": "Projeto de website de saúde preventiva",
+        "color1": "#3a4180",
+        "color2": "#0f8846"
       },
       "projectPhotos": [
         {
