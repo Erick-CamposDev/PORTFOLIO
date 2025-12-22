@@ -99,9 +99,15 @@ async function showModalContent(data, index) {
   closeModalContainer.style.visibility = "visible";
   closeModalContainer.style.opacity = "1";
 
-  clearHtml(projectTitle);
-  clearHtml(projectPhotos);
-  clearHtml(periodContainer);
+  clearHtml(
+    projectTitle,
+    projectPhotos,
+    periodContainer,
+    problemsContainer,
+    functionalitiesContainer,
+    technologiesContainer,
+    projectBtnsContainer
+  );
 
   const modalIndex = index === 0 ? "modal" : `modal-${index + 1}`;
   const modal = data.modals[index][modalIndex];
@@ -178,6 +184,8 @@ function closeModal() {
   document.body.classList.remove("active");
 }
 
-function clearHtml(element) {
-  element.innerHTML = "";
+function clearHtml(...elements) {
+  elements.forEach((e) => {
+    e.innerHTML = "";
+  });
 }
