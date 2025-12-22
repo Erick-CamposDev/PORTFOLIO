@@ -65,8 +65,75 @@
           }
         ]
       },
-      "modal-2": {},
-      "modal-3": {}
+      "modal2": {
+        "projectTitle": {
+          "title": "Nimbus",
+          "titleSpan": "Cast",
+          "description": "Projeto de aplicação de clima em tempo real",
+          "color1": "#7a7b80",
+          "color2": "#7a7b80"
+        },
+        "projectPhotos": [
+          {
+            "id": 1,
+            "src": "src/assets/images/nimbuscast-before-search.jpg",
+            "alt": "Imagem do projeto antes de encontrar uma cidade"
+          },
+          {
+            "id": 2,
+            "src": "src/assets/images/nimbuscast-after-search.jpg",
+            "alt": "Imagem do projeto após encontrar uma cidade"
+          }
+        ],
+        "period": "Setembro 2025 - Outubro 2025",
+        "projectResolvedProblems": [
+          "Pouco conhecimento sobre o clima atual.",
+          "Exposição a condições climáticas perigosas.",
+          "Impactos do clima na saúde.",
+          "Informações climáticas difíceis de se entender."
+        ],
+        "functionalities": [
+          "Busca rápida para cidades",
+          "Clima atual em tempo real",
+          "Informações essencias sobre o clima",
+          "Condição climática atual"
+        ],
+        "technologies": [
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+            "alt": "Imagem do HTML"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+            "alt": "Imagem do CSS"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+            "alt": "Imagem do Javascript"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+            "alt": "Imagem do Git"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+            "alt": "Imagem do VS Code"
+          },
+          {
+            "src": "src/assets/images/openweathermap-logo.png",
+            "alt": "Imagem da OpenWeatherMap API"
+          }
+        ],
+        "acessButtons": [
+          {
+            "href": "https://github.com/Erick-CamposDev/VivaBem.git"
+          },
+          {
+            "href": "https://erick-camposdev.github.io/VivaBem/"
+          }
+        ]
+      },
+      "modal3": {}
     }
   ]
 }

@@ -714,11 +714,6 @@ footer {
   font-size: 1.9rem;
   font-family: "Lato";
   font-weight: 800;
-  color: #3a4180;
-}
-
-.project-title h2 span {
-  color: #0f8846;
 }
 
 .project-title h3 {
@@ -1175,7 +1170,7 @@ body.active {
   }
 
   .modal {
-    width: 95%;
+    width: auto;
   }
 
   .problems ul li,

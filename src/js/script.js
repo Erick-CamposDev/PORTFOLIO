@@ -109,13 +109,13 @@ async function showModalContent(data, index) {
     projectBtnsContainer
   );
 
-  const modalIndex = index === 0 ? "modal" : `modal-${index + 1}`;
-  const modal = data.modals[index][modalIndex];
+  const modalIndex = index === 0 ? "modal" : `modal${index + 1}`;
+  const modal = data.modals[0][modalIndex];
 
   const title = modal.projectTitle.title;
   const titleSpan = modal.projectTitle.titleSpan;
 
-  projectTitle.innerHTML = `<h2 style="color=${modal.projectTitle.color1}">${title}<span style="color=${modal.projectTitle.color2}">${titleSpan}</span></h2>
+  projectTitle.innerHTML = `<h2 style="color:${modal.projectTitle.color1}">${title}<span style="color:${modal.projectTitle.color2}">${titleSpan}</span></h2>
                             <h3>${modal.projectTitle.description}</h3>`;
 
   projectPhotos.innerHTML = `<img class="project-photo" src="${modal.projectPhotos[0].src}" alt="${modal.projectPhotos[0].alt}">
