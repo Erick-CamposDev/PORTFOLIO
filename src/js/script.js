@@ -161,6 +161,17 @@ async function showModalContent(data, index) {
                                         <p>VER PROJETO<p>
                                       </a>
                                     </button>`;
+
+  const accessButton2 = document.querySelectorAll(".project-btn")[1];
+
+  if (modalIndex === "modal2") {
+    accessButton2.addEventListener("click", (e) => {
+      e.preventDefault();
+      alert(
+        "PARA ACESSAR O PROJETO, PRIMEIRO ENTRE NO GITHUB E LEIA AS INSTRUÇÕES!"
+      );
+    });
+  }
 }
 
 function openModal(index) {
