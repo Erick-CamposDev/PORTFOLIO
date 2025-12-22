@@ -11,6 +11,17 @@ const closeModalBtn = document.querySelector(".close-btn");
 const modalOverlay = document.querySelector(".modal-bg");
 const loading = document.querySelector(".loading-container");
 
+const projectTitle = document.querySelector(".project-title");
+const projectPhotos = document.querySelector(".project-photos");
+
+const projectInfo = document.querySelector(".project-container-info");
+
+const periodContainer = document.querySelector(".period");
+const problemsContainer = document.querySelector(".problems");
+const functionalitiesContainer = document.querySelector(".functionalities");
+const technologiesContainer = document.querySelector(".technologies");
+const projectBtnsContainer = document.querySelector(".project-btns-container");
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -60,7 +71,7 @@ select.addEventListener("change", selectCategory);
 
 loops.forEach((loop) => (loop.innerHTML += loop.innerHTML));
 
-async function fetchJson() {
+async function fetchJson(index) {
   loading.style.visibility = "visible";
   loading.style.opacity = "1";
 
@@ -71,7 +82,9 @@ async function fetchJson() {
     console.log(data);
 
     if (data) {
-      showModalContent(data);
+      loading.style.visibility = "hidden";
+      loading.style.opacity = "0";
+      showModalContent(data, index);
     } else {
       alert("ERRO AO MOSTRAR DADOS!");
       closeModal();
@@ -82,17 +95,74 @@ async function fetchJson() {
   }
 }
 
-async function showModalContent(data) {
+async function showModalContent(data, index) {
   closeModalContainer.style.visibility = "visible";
   closeModalContainer.style.opacity = "1";
+
+  clearHtml(projectTitle);
+  clearHtml(projectPhotos);
+  clearHtml(periodContainer);
+
+  const modalIndex = index === 0 ? "modal" : `modal-${index + 1}`;
+  const modal = data.modals[index][modalIndex];
+
+  const title = modal.projectTitle.title;
+  const titleSpan = modal.projectTitle.titleSpan;
+
+  projectTitle.innerHTML = `<h2 style="color=${modal.projectTitle.color1}">${title}<span style="color=${modal.projectTitle.color2}">${titleSpan}</span></h2>
+                            <h3>${modal.projectTitle.description}</h3>`;
+
+  projectPhotos.innerHTML = `<img class="project-photo" src="${modal.projectPhotos[0].src}" alt="${modal.projectPhotos[0].alt}">
+                             <img class="project-photo" src="${modal.projectPhotos[1].src}" alt="${modal.projectPhotos[1].alt}">`;
+  periodContainer.innerHTML = `<h2>${modal.period}</h2>`;
+
+  const problems = modal.projectResolvedProblems
+    .map((problem) => `<li>${problem}</li>`)
+    .join("");
+
+  problemsContainer.innerHTML = `<h2>Problemas Resolvidos:</h2>
+                                 <ul class="problem-list">
+                                  ${problems}
+                                 </ul>`;
+  const functionalities = modal.functionalities
+    .map((func) => `<li>${func}</li>`)
+    .join("");
+
+  functionalitiesContainer.innerHTML = `<h2>Funcionalidades:</h2>
+                                        <ul>
+                                          ${functionalities}
+                                        </ul>`;
+
+  const technologies = modal.technologies
+    .map(
+      (technology) =>
+        `<li><img class="technology-li" src="${technology.src}" alt="${technology.alt}"></li>`
+    )
+    .join("");
+
+  technologiesContainer.innerHTML = `<h2>Tecnologias Utilizadas:</h2>
+                                     <ul class="technology-ul">
+                                      ${technologies}
+                                     </ul>`;
+
+  projectBtnsContainer.innerHTML = `<button class="project-btn">
+                                      <a target="_blank" href="${modal.acessButtons[0].href}">
+                                        <p>GITHUB <i class="devicon-github-original"></i><p>
+                                      </a>
+                                    </button>
+                                    <button class="project-btn">
+                                      <a target="_blank" href="${modal.acessButtons[1].href}">
+                                        <p>VER PROJETO<p>
+                                      </a>
+                                    </button>`;
 }
 
-function openModal() {
+function openModal(index) {
   modalOverlay.style.visibility = "visible";
   modalOverlay.style.opacity = "1";
   document.body.classList.add("active");
 
-  fetchJson();
+  fetchJson(index);
 }
 
 function closeModal() {
@@ -106,4 +176,8 @@ function closeModal() {
   closeModalContainer.style.opacity = "0";
 
   document.body.classList.remove("active");
+}
+
+function clearHtml(element) {
+  element.innerHTML = "";
 }

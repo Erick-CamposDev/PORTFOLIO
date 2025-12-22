@@ -1,69 +1,72 @@
 {
-  "modals": {
-    "modal1": {
-      "projectTitle": {
-        "title": "VivaBem",
-        "description": "Projeto de website de saúde preventiva",
-        "color1": "#3a4180",
-        "color2": "#0f8846"
+  "modals": [
+    {
+      "modal": {
+        "projectTitle": {
+          "title": "Viva",
+          "titleSpan": "Bem",
+          "description": "Projeto de website de saúde preventiva",
+          "color1": "#3a4180",
+          "color2": "#0f8846"
+        },
+        "projectPhotos": [
+          {
+            "id": 1,
+            "src": "src/assets/images/LandingPage.jpg",
+            "alt": "Landing Page do VivaBem"
+          },
+          {
+            "id": 2,
+            "src": "src/assets/images/CalculadoraIMC.jpg",
+            "alt": "Imagem da calculadora de Ìndice de massa corporal"
+          }
+        ],
+        "period": "Julho 2025 - Agosto 2025",
+        "projectResolvedProblems": [
+          "Falta de orientação para buscar ajuda tanto física quanto mental.",
+          "Dificuldade em manter hábitos saúdaveis.",
+          "Pouco acesso a orientações básicas de sáude.",
+          "Baixa conscientização sobre prevenção."
+        ],
+        "functionalities": [
+          "Calculadora IMC",
+          "Guia de primeiros socorros",
+          "Guia de sáude de mental",
+          "Diário Mental"
+        ],
+        "technologies": [
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+            "alt": "Imagem do HTML"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+            "alt": "Imagem do CSS"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+            "alt": "Imagem do Javascript"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+            "alt": "Imagem do Git"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+            "alt": "Imagem do VS Code"
+          }
+        ],
+        "acessButtons": [
+          {
+            "href": "https://github.com/Erick-CamposDev/VivaBem.git"
+          },
+          {
+            "href": "https://erick-camposdev.github.io/VivaBem/"
+          }
+        ]
       },
-      "projectPhotos": [
-        {
-          "id": 1,
-          "src": "src/assets/images/LandingPage.jpg",
-          "alt": "Landing Page do VivaBem"
-        },
-        {
-          "id": 2,
-          "src": "src/assets/images/CalculadoraIMC.jpg",
-          "alt": "Imagem da calculadora de Ìndice de massa corporal"
-        }
-      ],
-      "period": "Julho 2025 - Agosto 2025",
-      "projectResolvedProblems": [
-        "Falta de orientação para buscar ajuda tanto física quanto mental.",
-        "Dificuldade em manter hábitos saúdaveis.",
-        "Pouco acesso a orientações básicas de sáude.",
-        "Baixa conscientização sobre prevenção."
-      ],
-      "functionalities": [
-        "Calculadora IMC",
-        "Guia de primeiros socorros",
-        "Guia de sáude de mental",
-        "Diário Mental"
-      ],
-      "technologies": [
-        {
-          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-          "alt": "Imagem do HTML"
-        },
-        {
-          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-          "alt": "Imagem do CSS"
-        },
-        {
-          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-          "alt": "Imagem do Javascript"
-        },
-        {
-          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-          "alt": "Imagem do Git"
-        },
-        {
-          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
-          "alt": "Imagem do VS Code"
-        }
-      ],
-      "acessButtons": [
-        {
-          "href": "https://github.com/Erick-CamposDev/VivaBem.git"
-        },
-        {
-          "href": "https://erick-camposdev.github.io/VivaBem/"
-        }
-      ]
-    },
-    "modal-2": {},
-    "modal-3": {}
-  }
+      "modal-2": {},
+      "modal-3": {}
+    }
+  ]
 }
