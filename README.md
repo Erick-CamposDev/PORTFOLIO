@@ -79,6 +79,7 @@ Construído com **Mobile First**, garantindo boa visualização e usabilidade em
 - [x] Substituir os projetos por versões reais
 - [x] Ativar o botão de download de currículo
 - [x] Melhorar as animações de scroll com JavaScript avançado
+- [x] Adicionar modo claro e modo escuro
 
 ---
 
