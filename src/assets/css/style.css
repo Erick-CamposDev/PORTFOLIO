@@ -104,7 +104,7 @@ header div {
   cursor: pointer;
 }
 
-#toggle-btn {
+.contact-icons button {
   background: none;
   border: none;
 }
@@ -158,6 +158,7 @@ header div {
 .nav-item span {
   font-size: 1rem;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .nav-item span::after {
@@ -175,19 +176,10 @@ header div {
 
 .nav-item:hover span::after {
   transform: scaleX(1);
-  filter: invert(1);
 }
 
-.nav-item:hover i,
-.nav-item:hover span {
-  filter: invert(1);
-  cursor: pointer;
-  transition: filter 0.3s ease;
-}
-
-.nav-item i,
-.nav-item span {
-  transition: filter 0.3s ease;
+.nav-item span:hover {
+  transform: scale(1.15);
 }
 
 a {

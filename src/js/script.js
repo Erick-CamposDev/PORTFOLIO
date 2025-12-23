@@ -1,5 +1,6 @@
 const select = document.getElementById("selectSkill");
 const skillCategory = document.querySelectorAll(".skills-category");
+const toggleBtn = document.getElementById("toggleBtn");
 
 const header = document.querySelector("header");
 
@@ -41,6 +42,24 @@ window.addEventListener("scroll", () => {
     ? header.classList.add("scroll")
     : header.classList.remove("scroll");
 });
+
+const html = document.documentElement;
+
+function changeMode() {
+  const img = toggleBtn.querySelector("img");
+  const mode = html.dataset.theme;
+
+  html.dataset.theme = mode === "light" ? "dark" : "light";
+
+  img.src =
+    mode === "light"
+      ? "src/assets/images/moon-fill.svg"
+      : "src/assets/images/brightness-high-fill.svg";
+  img.alt =
+    mode === "light"
+      ? "Imagem de lua. Modo Escuro"
+      : "Imagem de sol. Modo Claro";
+}
 
 function selectCategory() {
   cleanCategory();
