@@ -128,8 +128,7 @@ async function showModalContent(data, index) {
     projectBtnsContainer
   );
 
-  const modalIndex = index === 0 ? "modal" : `modal${index + 1}`;
-  const modal = data.modals[0][modalIndex];
+  const modal = data.modals[index];
 
   const title = modal.projectTitle.title;
   const titleSpan = modal.projectTitle.titleSpan;
@@ -183,7 +182,7 @@ async function showModalContent(data, index) {
 
   const accessButton2 = document.querySelectorAll(".project-btn")[1];
 
-  if (modalIndex === "modal2") {
+  if (index === 1) {
     accessButton2.addEventListener("click", (e) => {
       e.preventDefault();
       alert(

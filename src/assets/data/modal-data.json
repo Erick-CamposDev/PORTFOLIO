@@ -1,206 +1,204 @@
 {
   "modals": [
     {
-      "modal": {
-        "projectTitle": {
-          "title": "Viva",
-          "titleSpan": "Bem",
-          "description": "Projeto de website de saúde preventiva",
-          "color1": "#3a4180",
-          "color2": "#0f8846"
-        },
-        "projectPhotos": [
-          {
-            "id": 1,
-            "src": "src/assets/images/LandingPage.jpg",
-            "alt": "Landing Page do VivaBem"
-          },
-          {
-            "id": 2,
-            "src": "src/assets/images/CalculadoraIMC.jpg",
-            "alt": "Imagem da calculadora de Ìndice de massa corporal"
-          }
-        ],
-        "period": "Julho 2025 - Agosto 2025",
-        "projectResolvedProblems": [
-          "Falta de orientação para buscar ajuda tanto física quanto mental.",
-          "Dificuldade em manter hábitos saúdaveis.",
-          "Pouco acesso a orientações básicas de sáude.",
-          "Baixa conscientização sobre prevenção."
-        ],
-        "functionalities": [
-          "Calculadora IMC",
-          "Guia de primeiros socorros",
-          "Guia de sáude de mental",
-          "Diário Mental"
-        ],
-        "technologies": [
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-            "alt": "Imagem do HTML"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-            "alt": "Imagem do CSS"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            "alt": "Imagem do Javascript"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-            "alt": "Imagem do Git"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
-            "alt": "Imagem do VS Code"
-          }
-        ],
-        "acessButtons": [
-          {
-            "href": "https://github.com/Erick-CamposDev/VivaBem.git"
-          },
-          {
-            "href": "https://erick-camposdev.github.io/VivaBem/"
-          }
-        ]
+      "projectTitle": {
+        "title": "Viva",
+        "titleSpan": "Bem",
+        "description": "Projeto de website de saúde preventiva",
+        "color1": "#3a4180",
+        "color2": "#0f8846"
       },
-      "modal2": {
-        "projectTitle": {
-          "title": "Nimbus",
-          "titleSpan": "Cast",
-          "description": "Projeto de aplicação de clima em tempo real",
-          "color1": "#7a7b80",
-          "color2": "#7a7b80"
+      "projectPhotos": [
+        {
+          "id": 1,
+          "src": "src/assets/images/LandingPage.jpg",
+          "alt": "Landing Page do VivaBem"
         },
-        "projectPhotos": [
-          {
-            "id": 1,
-            "src": "src/assets/images/nimbuscast-before-search.jpg",
-            "alt": "Imagem do projeto antes de encontrar uma cidade"
-          },
-          {
-            "id": 2,
-            "src": "src/assets/images/nimbuscast-after-search.jpg",
-            "alt": "Imagem do projeto após encontrar uma cidade"
-          }
-        ],
-        "period": "Setembro 2025 - Outubro 2025",
-        "projectResolvedProblems": [
-          "Pouco conhecimento sobre o clima atual.",
-          "Exposição a condições climáticas perigosas.",
-          "Impactos do clima na saúde.",
-          "Informações climáticas difíceis de se entender."
-        ],
-        "functionalities": [
-          "Busca rápida para cidades",
-          "Clima atual em tempo real",
-          "Informações essencias sobre o clima",
-          "Condição climática atual"
-        ],
-        "technologies": [
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-            "alt": "Imagem do HTML"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-            "alt": "Imagem do CSS"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            "alt": "Imagem do Javascript"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-            "alt": "Imagem do Git"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
-            "alt": "Imagem do VS Code"
-          },
-          {
-            "src": "src/assets/images/openweathermap-logo.png",
-            "alt": "Imagem da OpenWeatherMap API"
-          }
-        ],
-        "acessButtons": [
-          {
-            "href": "https://github.com/Erick-CamposDev/NimbusCast.git"
-          },
-          {
-            "href": ""
-          }
-        ]
+        {
+          "id": 2,
+          "src": "src/assets/images/CalculadoraIMC.jpg",
+          "alt": "Imagem da calculadora de Ìndice de massa corporal"
+        }
+      ],
+      "period": "Julho 2025 - Agosto 2025",
+      "projectResolvedProblems": [
+        "Falta de orientação para buscar ajuda tanto física quanto mental.",
+        "Dificuldade em manter hábitos saúdaveis.",
+        "Pouco acesso a orientações básicas de sáude.",
+        "Baixa conscientização sobre prevenção."
+      ],
+      "functionalities": [
+        "Calculadora IMC",
+        "Guia de primeiros socorros",
+        "Guia de sáude de mental",
+        "Diário Mental"
+      ],
+      "technologies": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+          "alt": "Imagem do HTML"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+          "alt": "Imagem do CSS"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          "alt": "Imagem do Javascript"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+          "alt": "Imagem do Git"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+          "alt": "Imagem do VS Code"
+        }
+      ],
+      "acessButtons": [
+        {
+          "href": "https://github.com/Erick-CamposDev/VivaBem.git"
+        },
+        {
+          "href": "https://erick-camposdev.github.io/VivaBem/"
+        }
+      ]
+    },
+    {
+      "projectTitle": {
+        "title": "Nimbus",
+        "titleSpan": "Cast",
+        "description": "Projeto de aplicação de clima em tempo real",
+        "color1": "#7a7b80",
+        "color2": "#7a7b80"
       },
-      "modal3": {
-        "projectTitle": {
-          "title": "Quiz",
-          "titleSpan": "Master",
-          "description": "Projeto de quiz interativo",
-          "color1": "#0a0a0a",
-          "color2": "#bdb82a"
+      "projectPhotos": [
+        {
+          "id": 1,
+          "src": "src/assets/images/nimbuscast-before-search.jpg",
+          "alt": "Imagem do projeto antes de encontrar uma cidade"
         },
-        "projectPhotos": [
-          {
-            "id": 1,
-            "src": "src/assets/images/tela-inicial-quiz.jpg",
-            "alt": "Imagem da tela principal do quiz"
-          },
-          {
-            "id": 2,
-            "src": "src/assets/images/quizmaster.jpg",
-            "alt": "Imagem do quiz em andamento"
-          }
-        ],
-        "period": "Novembro 2025",
-        "projectResolvedProblems": [
-          "Ansiedade para provas.",
-          "Pouca memorização em conteúdos específicos.",
-          "Impactos do clima na saúde.",
-          "Estudo sem foco."
-        ],
-        "functionalities": [
-          "Seleção de matérias escolares.",
-          "Temporizador no quiz,",
-          "Pontuação ao concluir o quiz.",
-          "Perguntas de múltipla escolha."
-        ],
-        "technologies": [
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-            "alt": "Imagem do HTML"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-            "alt": "Imagem do CSS"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            "alt": "Imagem do Javascript"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-            "alt": "Imagem do Git"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
-            "alt": "Imagem do VS Code"
-          },
-          {
-            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg",
-            "alt": "Imagem do JSON"
-          }
-        ],
-        "acessButtons": [
-          {
-            "href": "https://github.com/Erick-CamposDev/QuizMaster.git"
-          },
-          {
-            "href": "https://erick-camposdev.github.io/QuizMaster/"
-          }
-        ]
-      }
+        {
+          "id": 2,
+          "src": "src/assets/images/nimbuscast-after-search.jpg",
+          "alt": "Imagem do projeto após encontrar uma cidade"
+        }
+      ],
+      "period": "Setembro 2025 - Outubro 2025",
+      "projectResolvedProblems": [
+        "Pouco conhecimento sobre o clima atual.",
+        "Exposição a condições climáticas perigosas.",
+        "Impactos do clima na saúde.",
+        "Informações climáticas difíceis de se entender."
+      ],
+      "functionalities": [
+        "Busca rápida para cidades",
+        "Clima atual em tempo real",
+        "Informações essencias sobre o clima",
+        "Condição climática atual"
+      ],
+      "technologies": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+          "alt": "Imagem do HTML"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+          "alt": "Imagem do CSS"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          "alt": "Imagem do Javascript"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+          "alt": "Imagem do Git"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+          "alt": "Imagem do VS Code"
+        },
+        {
+          "src": "src/assets/images/openweathermap-logo.png",
+          "alt": "Imagem da OpenWeatherMap API"
+        }
+      ],
+      "acessButtons": [
+        {
+          "href": "https://github.com/Erick-CamposDev/NimbusCast.git"
+        },
+        {
+          "href": ""
+        }
+      ]
+    },
+    {
+      "projectTitle": {
+        "title": "Quiz",
+        "titleSpan": "Master",
+        "description": "Projeto de quiz interativo",
+        "color1": "#0a0a0a",
+        "color2": "#bdb82a"
+      },
+      "projectPhotos": [
+        {
+          "id": 1,
+          "src": "src/assets/images/tela-inicial-quiz.jpg",
+          "alt": "Imagem da tela principal do quiz"
+        },
+        {
+          "id": 2,
+          "src": "src/assets/images/quizmaster.jpg",
+          "alt": "Imagem do quiz em andamento"
+        }
+      ],
+      "period": "Novembro 2025",
+      "projectResolvedProblems": [
+        "Ansiedade para provas.",
+        "Pouca memorização em conteúdos específicos.",
+        "Impactos do clima na saúde.",
+        "Estudo sem foco."
+      ],
+      "functionalities": [
+        "Seleção de matérias escolares.",
+        "Temporizador no quiz,",
+        "Pontuação ao concluir o quiz.",
+        "Perguntas de múltipla escolha."
+      ],
+      "technologies": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+          "alt": "Imagem do HTML"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+          "alt": "Imagem do CSS"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          "alt": "Imagem do Javascript"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+          "alt": "Imagem do Git"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+          "alt": "Imagem do VS Code"
+        },
+        {
+          "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg",
+          "alt": "Imagem do JSON"
+        }
+      ],
+      "acessButtons": [
+        {
+          "href": "https://github.com/Erick-CamposDev/QuizMaster.git"
+        },
+        {
+          "href": "https://erick-camposdev.github.io/QuizMaster/"
+        }
+      ]
     }
   ]
 }
