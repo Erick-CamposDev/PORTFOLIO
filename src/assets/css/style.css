@@ -12,7 +12,7 @@
 :root[data-theme="dark"] {
   --primary-color: #0d0d0d;
   --secondary-color: #121212;
-  --tertirary-color: #332f2f;
+  --tertiary-color: #221f1f;
   --txt-color: #f0f0f0;
 }
 
@@ -167,6 +167,7 @@ header div {
 
 .nav-item:hover span::after {
   transform: scaleX(1);
+  filter: invert(1);
 }
 
 .nav-item:hover i,
@@ -343,7 +344,7 @@ main section {
   );
   padding: 1rem;
   border-radius: 18px;
-  box-shadow: 5px 5px 12px var(--txt-color);
+  box-shadow: 3.5px 3.5px 5px #000000;
 }
 
 .skills-select {
@@ -431,7 +432,7 @@ main section {
   );
   border-radius: 25px;
   padding: 0 1rem 1rem;
-  box-shadow: 3px 3px 12px var(--txt-color);
+  box-shadow: 3.5px 3.5px 5px #000000;
   overflow: hidden;
 }
 
@@ -480,14 +481,13 @@ main section {
 .project-content {
   display: flex;
   flex-flow: column wrap;
-  background: #dad6d6;
+  background: var(--secondary-color);
   width: 315px;
   height: auto;
-  color: #0a0a0a;
+  color: var(--txt-color);
   padding-bottom: 2rem;
   margin: 0 0 2.5rem 2rem;
   border-radius: 10px;
-  box-shadow: 3.5px 3.5px 5px #000000;
   gap: 0.5rem;
   opacity: 0;
   transform: translateX(-400px);
@@ -565,7 +565,7 @@ main section {
     rgb(94, 90, 90) 100%
   );
   border-radius: 20px;
-  box-shadow: 5px 5px 10px var(--txt-color);
+  box-shadow: 3.5px 3.5px 5px #000000;
   width: 65%;
   transition: all 0.3s ease-in-out;
 }
@@ -695,6 +695,10 @@ footer {
   background: none;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.close-btn i {
+  color: var(--txt-color);
 }
 
 .close-btn:hover {
