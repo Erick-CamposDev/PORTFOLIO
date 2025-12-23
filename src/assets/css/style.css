@@ -88,17 +88,25 @@ header div {
 }
 
 .contact-icons {
+  display: flex;
+  align-items: center;
   margin-left: 3rem;
   gap: 10px;
 }
 
 .contact-icons img {
-  transition: filter 0.3s ease;
+  transition: all 0.3s ease-in;
 }
 
 .contact-icons img:hover {
   filter: invert(1);
+  transform: scale(1.25);
   cursor: pointer;
+}
+
+#toggle-btn {
+  background: none;
+  border: none;
 }
 
 .nav-bar-pc {
@@ -962,6 +970,11 @@ body.active {
     margin: 0;
   }
 
+  .contact-icons img {
+    width: 15px;
+    height: 15px;
+  }
+
   .project-content {
     width: 250px;
     height: auto;
@@ -1334,7 +1347,7 @@ body.active {
   }
 
   .nav-bar-pc .list .nav-item a span {
-    font-size: 0.72rem;
+    font-size: 0.65rem;
   }
 
   .main-photo img {
