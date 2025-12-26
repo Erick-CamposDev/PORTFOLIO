@@ -53,8 +53,8 @@ function changeMode() {
 
   img.src =
     mode === "light"
-      ? "src/assets/images/moon-fill.svg"
-      : "src/assets/images/brightness-high-fill.svg";
+      ? "src/assets/images/icons/moon-fill.svg"
+      : "src/assets/images/icons/brightness-high-fill.svg";
   img.alt =
     mode === "light"
       ? "Imagem de lua. Modo Escuro"

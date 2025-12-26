@@ -83,14 +83,12 @@ header div {
 .description h2 {
   font-weight: 600;
   font-size: 1rem;
-  width: 120px;
   text-transform: uppercase;
 }
 
 .contact-icons {
   display: flex;
   align-items: center;
-  margin-left: 3rem;
   gap: 10px;
 }
 
@@ -553,10 +551,10 @@ main section {
   gap: 1rem;
 }
 
-.social-links button {
+.social-btn {
   display: flex;
   justify-content: center;
-  padding: 0.9rem;
+  padding: 1.5rem 1rem;
   align-items: center;
   border: 2px solid var(--txt-color);
   background: linear-gradient(
@@ -566,29 +564,21 @@ main section {
   );
   border-radius: 20px;
   box-shadow: 3.5px 3.5px 5px #000000;
-  width: 65%;
+  width: 20%;
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  gap: 0.8rem;
   transition: all 0.3s ease-in-out;
 }
 
-.social-links button:hover {
+.social-btn:hover {
   filter: brightness(1.1);
   transform: scale(1.07);
   cursor: pointer;
 }
 
-.social-links button a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.social-links a img {
+.social-btn img {
   filter: invert(1);
-}
-
-.social-links a:hover {
-  transform: scale(1.05);
-  filter: brightness(1.5);
 }
 
 footer {
@@ -925,12 +915,20 @@ body.active {
   #selectSkill {
     width: 70%;
   }
+
+  .social-btn {
+    width: 90%;
+  }
 }
 
 @media (min-width: 280px) and (max-width: 370px) {
   .description h2 {
     font-size: 14px;
-    width: 70px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: 120px;
   }
 
   .about-content {
@@ -1218,6 +1216,10 @@ body.active {
     text-align: center;
     margin-bottom: 0.75rem;
   }
+
+  .social-links {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1309,12 +1311,11 @@ body.active {
     text-align: left;
   }
 
-  .social-links button {
+  .social-btn {
     padding: 1.6rem 1rem 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
   }
 
   #about-me h2,
@@ -1365,6 +1366,10 @@ body.active {
 
   .project-container-info h2 {
     font-size: 1.4rem;
+  }
+
+  .social-btn {
+    width: 25%;
   }
 }
 
