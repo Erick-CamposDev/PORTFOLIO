@@ -1041,6 +1041,11 @@ body.active {
     min-width: 250px;
   }
 
+  .project-photo {
+    width: 100%;
+    height: 80px;
+  }
+
   .project-btns-container {
     flex-direction: column;
     width: 100%;
@@ -1057,6 +1062,17 @@ body.active {
 
   .nav-item span {
     font-size: 0.75rem;
+  }
+
+  .project-container-info h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {
+  .project-photo {
+    width: 100%;
+    height: 90px;
   }
 }
 
@@ -1082,6 +1098,14 @@ body.active {
     flex-direction: column;
   }
 
+  .about-content {
+    width: 95%;
+  }
+
+  .modal {
+    height: 100%;
+  }
+
   .btn {
     padding: 1rem;
     width: 90%;
@@ -1089,6 +1113,23 @@ body.active {
 
   .modal {
     width: 95%;
+  }
+
+  .project-title h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-container-info ul li {
+    font-size: 0.9rem;
+  }
+
+  .technology-ul li img {
+    width: 25px;
+    height: 25px;
   }
 
   .main-container {
@@ -1108,21 +1149,21 @@ body.active {
     text-align: center;
   }
 
-  .project-container-info div {
+  .project-container-info div:not(.period) {
     margin: 1rem 0 0;
   }
 
+  @media (min-width: 280px) and (max-width: 600px) {
+    .project-container-info .period {
+      margin: 0;
+    }
+  }
   .project-container-info ul li {
     list-style: none;
   }
 
   .close-btn-container {
     align-self: flex-start;
-  }
-
-  .project-photo {
-    width: 100%;
-    height: 150px;
   }
 }
 
@@ -1219,6 +1260,10 @@ body.active {
 
   .social-links {
     margin-left: 0;
+  }
+
+  .project-content {
+    transform: translateX(-200px);
   }
 }
 
