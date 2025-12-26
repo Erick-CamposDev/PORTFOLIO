@@ -98,12 +98,10 @@ async function fetchJson(index) {
     const response = await fetch("src/assets/data/modal-data.json");
     const data = await response.json();
 
-    console.log(data);
-
     if (data) {
-      loading.style.visibility = "hidden";
-      loading.style.opacity = "0";
-      showModalContent(data, index);
+      setTimeout(() => {
+        showModalContent(data, index);
+      }, 1000);
     } else {
       alert("ERRO AO MOSTRAR DADOS!");
       closeModal();
@@ -118,15 +116,7 @@ async function showModalContent(data, index) {
   closeModalContainer.style.visibility = "visible";
   closeModalContainer.style.opacity = "1";
 
-  clearHtml(
-    projectTitle,
-    projectPhotos,
-    periodContainer,
-    problemsContainer,
-    functionalitiesContainer,
-    technologiesContainer,
-    projectBtnsContainer
-  );
+  hideElement(loading);
 
   const modal = data.modals[index];
 
@@ -201,16 +191,26 @@ function openModal(index) {
 }
 
 function closeModal() {
-  modalOverlay.style.visibility = "hidden";
-  modalOverlay.style.opacity = "0";
+  hideElement(modalOverlay, loading, closeModalContainer);
 
-  loading.style.visibility = "hidden";
-  loading.style.opacity = "0";
-
-  closeModalContainer.style.visibility = "hidden";
-  closeModalContainer.style.opacity = "0";
+  clearHtml(
+    projectTitle,
+    projectPhotos,
+    periodContainer,
+    problemsContainer,
+    functionalitiesContainer,
+    technologiesContainer,
+    projectBtnsContainer
+  );
 
   document.body.classList.remove("active");
+}
+
+function hideElement(...elements) {
+  elements.forEach((e) => {
+    e.style.visibility = "hidden";
+    e.style.opacity = "0";
+  });
 }
 
 function clearHtml(...elements) {
