@@ -100,4 +100,4 @@ Abra uma issue ou entre em contato diretamente para contribuir.
 ## 📎 Link do Deploy
 
 Está curioso em ver meu portfólio? Confira aqui no link!
-[PORTFÓLIO](https://erick-camposdev.github.io/PORTIFOLIO/)
+[PORTFÓLIO](https://erick-camposdev.github.io/PORTFOLIO/)
