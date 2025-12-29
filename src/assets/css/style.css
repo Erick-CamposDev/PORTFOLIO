@@ -978,6 +978,13 @@ body.active {
   .skills-category {
     width: 250px;
   }
+
+  .project-btn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 280px) and (max-width: 421px) {
@@ -1072,7 +1079,7 @@ body.active {
 @media (min-width: 421px) and (max-width: 600px) {
   .project-photo {
     width: 100%;
-    height: 90px;
+    height: 120px;
   }
 }
 
@@ -1215,6 +1222,7 @@ body.active {
 
   .project-btns-container {
     flex-direction: column;
+    margin: 1rem 0 0 0;
   }
 
   .modal {
