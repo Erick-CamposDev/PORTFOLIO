@@ -64,8 +64,13 @@ Informações para contato:
   - Efeitos de **fade-in** ativados conforme o usuário faz scroll.
 
 - ✅ **Navegação por Âncoras**
+  
   - A navbar utiliza âncoras (`#id`) para navegação suave entre seções.
 
+- ✅ **Modo claro e Modo Escuro**
+  
+  - Você pode mudar o tema do website para uma página mais clara ou escura de acordo com suas preferências.
+  
 ---
 
 ## 📱 Responsividade
